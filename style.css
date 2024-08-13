@@ -6,13 +6,27 @@
     box-sizing: border-box;
     font-family: Inter;
 }
-header, main{
-    margin:30px 80px;
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+section{
+    max-width: 1270px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.gap>*{
+    margin-bottom: 16px;
 }
 header{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.267)), url('images/Banner\ Image.png');
-    width: 1320px;
-    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 100px;
 }
 header h3, header h1{
     color: white;
@@ -25,22 +39,20 @@ header h1{
     font-size: 50px;
 }
 .happy{
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 600px;
-    width: 1320px;
 }
 
-
+/* ============================================================ */
 .deals{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     line-height: 70px;
-    margin-top: 120px;
     width: 1320px;
     height: 600px;
 }
@@ -59,10 +71,8 @@ header h1{
 .deals h2{
     font-size: 48px;
 }
-
-
+/* ============================================================ */
 .party{
-    margin-top: 120px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -70,7 +80,6 @@ header h1{
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    width: 1320px;
     height: 600px;
 }
 .party a{
@@ -85,13 +94,11 @@ header h1{
     line-height: 90px;
     margin-bottom: 20px;
 }
-
+/* ============================================================ */
 .date{
-    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1320px;
     height: 600px;
     text-align: center;
     background: linear-gradient(180.00deg, rgba(255, 0, 0, 0.1),rgba(255, 0, 0, 0) 100%);
@@ -110,12 +117,11 @@ header h1{
     font-size: 20px;
     border-radius: 10px;
 }
-
+/* ==================================================================== */
 .offers{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 1320px;
     height: 600px;
 }
 .offers h3{
@@ -133,4 +139,102 @@ header h1{
     border-radius: 50%;
     border: 10px solid red; 
     padding: 15px;  
+}
+
+/* ============================================================== */
+.holiday-deals{
+    background: url('images/Rectangle\ 2.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 15px;
+}
+.holiday-text{
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.holiday-deals h1{
+    font-size: 72px;
+    font-weight: 900;
+}
+.holiday-text span{
+    color: red;
+}
+.holiday-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* ============================================== */
+.gift img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.gift-text{
+    width: 70%;
+}
+.gift-text h4{
+    color: red;
+}
+.gift-image{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+/* ======================================================== */
+.subscribe{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.05);
+}
+.subscribe-div{
+    width: 80%;
+}
+.input-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe input{
+    width: 40%;
+    padding: 25px 30px;
+    border-radius: 50px 0 0 50px;
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+}
+.subscribe button{
+    padding: 25px 30px;
+    border-radius: 0 50px 50px 0;
+    background-color: red;
+    color: white;
+    border: none;
+}
+/* ===================================================== */
+footer{
+    background-color: rgb(7, 2, 17);
+    color: white;
+    padding: 120px 140px;
+    text-align: center;
+}
+footer>*:not(:last-child){
+    margin-bottom: 50px;
+}
+.address, .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.info{
+    gap: 5px;
 }
